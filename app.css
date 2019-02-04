@@ -76,6 +76,10 @@ nav {
   flex: 1;
 }
 
+.nav__brand .nav__item {
+  font-size: 16px;
+}
+
 .nav__icons {
   text-align: right;
 }
@@ -115,7 +119,7 @@ nav {
 .intro__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .intro__left-list {
@@ -130,7 +134,7 @@ nav {
 
 .scroll {
   position: absolute;
-  bottom: 180px;
+  bottom: 220px;
   left: 0;
   right: 0;
   margin: auto;
@@ -149,4 +153,122 @@ nav {
 .skills__set-image {
   width: 80px;
   margin: 0 25px;
+}
+
+/* Work */
+
+.work {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20em;
+}
+
+.work > .work__title {
+  position: absolute;
+  top: 85px;
+}
+
+.work > .work__title > .work__underline {
+  display: block;
+  background-color: var(--blue);
+  height: 3px;
+  width: 61px;
+  margin-top: 10px;
+}
+
+.work__link {
+  text-decoration: none;
+}
+
+.work > .work__image {
+  width: 85%;
+  float: right;
+  box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+}
+
+.work .work__location {
+  position: absolute;
+  bottom: 0;
+  right: 90%;
+}
+
+.work__location-image {
+  width: 40px;
+}
+
+.work__location-item {
+  margin-top: 20px;
+  list-style: none;
+}
+/* Work flip */
+
+.workflip {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20em;
+}
+
+.workflip > .workflip__title {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  text-align: right;
+}
+
+.workflip > .workflip__title > .workflip__underline {
+  display: block;
+  background-color: var(--blue);
+  height: 3px;
+  width: 61px;
+  margin-top: 10px;
+  float: right;
+}
+
+.workflip__link {
+  text-decoration: none;
+}
+
+.workflip > .workflip__image {
+  width: 80%;
+  float: left;
+  box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+}
+
+.workflip .workflip__location {
+  position: absolute;
+  bottom: 0;
+  left: 82%;
+}
+
+.workflip__location-image {
+  width: 40px;
+}
+
+.workflip__location-item {
+  margin-top: 20px;
+  list-style: none;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  background-image: url(assets/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 7em;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+.footer__underline {
+  display: block;
+  height: 3px;
+  width: 50px;
+  margin: 5px auto 0 auto;
+  background-color: var(--blue);
 }
