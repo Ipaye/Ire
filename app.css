@@ -33,6 +33,11 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  body {
+    width: 80%;
+  }
+}
 .clearfix::after {
   content: '';
   clear: both;
@@ -120,6 +125,10 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
+}
+
+.intro__right-image {
+  width: 380px;
 }
 
 .intro__left-list {
@@ -271,4 +280,145 @@ nav {
   width: 50px;
   margin: 5px auto 0 auto;
   background-color: var(--blue);
+}
+
+@media screen and (max-width: 910px) {
+  .work > .work__title {
+    top: 0;
+  }
+  .workflip > .workflip__title {
+    top: 0;
+  }
+
+  .workflip__title h1 {
+    font-size: 30px;
+  }
+  .workflip__link h5 {
+    font-size: 18px;
+  }
+  .work__title h1 {
+    font-size: 30px;
+  }
+  .work__link h5 {
+    font-size: 18px;
+  }
+  .intro__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .intro__left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .intro__left h1 {
+    flex: 0 0 100%;
+  }
+
+  .intro__left-list {
+    margin-top: 0;
+    margin: auto;
+  }
+
+  .intro__right-image {
+    width: 250px;
+  }
+
+  .work__location-image,
+  .workflip__location-image {
+    width: 20px;
+  }
+
+  .intro__left-list {
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  .intro__left-list-item::before {
+    position: absolute;
+    content: '';
+    left: -20px;
+    margin-top: 10px;
+    background-color: rebeccapurple;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .intro__left-list {
+    position: relative;
+    align-self: flex-start;
+    margin: -40px 0px 0px -0px;
+  }
+  .work__location-image,
+  .workflip__location-image {
+    width: 20px;
+  }
+  .intro__wrapper {
+    margin-top: 25px;
+  }
+  .skills__details {
+    font-size: 18px;
+  }
+  .skills__set-image {
+    width: 35px;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 505px) {
+  .work > .work__title,
+  .workflip > .workflip__title {
+    top: 0;
+  }
+
+  .workflip__title h1,
+  .work__title h1 {
+    font-size: 18px;
+  }
+  .workflip__link h5,
+  .work__link h5 {
+    font-size: 10px;
+  }
+  .work__location-image,
+  .workflip__location-image {
+    width: 20px;
+  }
+  .intro__wrapper {
+    flex-direction: column-reverse;
+  }
+  .nav__icons .nav__item {
+    margin-left: 20px;
+  }
+  .skills__details {
+    font-size: 16px;
+  }
+  .skills__set-image {
+    width: 40px;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .nav__icons {
+    display: none;
+  }
+
+  .workflip__title h1,
+  .work__title h1 {
+    font-size: 16px;
+  }
+  .workflip__link h5,
+  .work__link h5 {
+    font-size: 10px;
+  }
+  .work__location-image,
+  .workflip__location-image {
+    width: 12px;
+  }
+
+  p,
+  .intro__left-list-item {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
